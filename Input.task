@@ -1,0 +1,15 @@
+STARTPROG
+
+	Number a, b;
+	Text t1, t2, t3;
+
+	Read(t1);
+	Read(b);
+	
+	a = 1 + 2 * 3 / b;
+	b = 3 * 1 + 2;
+	
+	Write(a);
+	Write(b);
+
+ENDPROG
