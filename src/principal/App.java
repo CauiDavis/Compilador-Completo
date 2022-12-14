@@ -13,13 +13,10 @@ public class App {
         	taskLangLexer lexer;
         	taskLangParser parser;
         	
-        	//ler o arquivo input.task que é a entrada para o Analisador lexico
         	lexer = new taskLangLexer(CharStreams.fromFileName("Input.task"));
         	
-        	// cria um fluxo de tokens para passar para o PARSER
         	CommonTokenStream tokenStream = new CommonTokenStream(lexer);
         	
-        	// cria meu parser a partir desse tokenStream
         	parser = new taskLangParser(tokenStream);
         	
         	parser.prog();
